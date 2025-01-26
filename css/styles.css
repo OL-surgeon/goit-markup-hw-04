@@ -272,30 +272,37 @@ img {
 }
 .photos-info {
   padding: 32px 0;
-  margin-bottom: 8px;
 }
 .icon-third-section-lists {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 32px;
 }
 
 .icon-third-section-list {
-  background-color: #4d5ae5;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
+
+  align-content: center;
+}
+.icon-third-section-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-third-section-list li:hover {
+.icon-third-section-link:hover {
   background-color: #404bbf;
+}
+.icon-third-section-link:focus {
+  background-color: #404bbf;
+}
+.icon {
+  fill: #f4f4fd;
 }
 .third-title-photos {
   font-weight: 500;
@@ -312,6 +319,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+  margin-bottom: 8px;
 }
 .second-title {
   font-weight: 700;
@@ -335,6 +343,9 @@ img {
   padding-left: 0;
 }
 .fourth-section-photos {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: calc((100% - 48px) / 3);
 }
 .fourth-section-photos:hover .text-cover {
@@ -347,13 +358,15 @@ img {
 .text-cover {
   position: absolute;
   top: 0;
-  left: 0;
-  padding: 40px 32px 164px 32px;
+
+  padding: 40px 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  height: 100%;
+  width: 100%;
   background-color: #4d5ae5;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -380,7 +393,11 @@ img {
 }
 .footer .container {
   display: flex;
-  gap: 120px;
+
+  align-items: baseline;
+}
+.container-logo {
+  margin-right: 120px;
 }
 .logo-footer {
   display: inline-block;
@@ -413,7 +430,30 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.footer-media-icons {
+.icon-footer-lists {
   display: flex;
   gap: 16px;
+}
+.icon-footer-list {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-footer-link:hover {
+  background-color: #31d0aa;
+}
+.icon-footer-link:hover {
+  background-color: #31d0aa;
+}
+.icon-footer {
+  fill: #f4f4fd;
 }
